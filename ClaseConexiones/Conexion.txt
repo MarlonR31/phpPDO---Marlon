@@ -1,0 +1,16 @@
+<?php
+$host = "localhost";
+$db = "dbclasepoo";
+$user = "root";
+$password = "";
+$conexion = new PDO ('mysql:host='.$host.'; dbname ='.$db, $user, $password);
+
+if($conexion = !null)
+{
+    echo "Conexion Exitosa";
+}
+else
+{
+    echo "Fallo la conexion";
+}
+?>
